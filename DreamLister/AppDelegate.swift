@@ -91,3 +91,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+let appDelegate = UIApplication.shared.delegate as! AppDelegate //app delegate object global variable to access from anywhere
+let context = appDelegate.persistentContainer.viewContext // context needed in NSfetch controller
+
